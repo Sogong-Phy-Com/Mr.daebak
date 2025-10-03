@@ -112,36 +112,73 @@ com.mrdinner/
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Java 8 or higher
-- Git
+- **Java 8 or higher** - [Download here](https://adoptium.net/)
+- **Git** (optional, for cloning)
 
-### Installation
+### Quick Start
 
-1. Clone the repository:
+#### **Method 1: Using Scripts**
+
+**Windows:**
 ```bash
-git clone https://github.com/yourusername/mr-dinner-service.git
-cd mr-dinner-service
+# Clone the repository
+git clone https://github.com/Sogong-Phy-Com/Mr.daebak.git
+cd Mr.daebak
+
+# Run console version
+build.bat
+run.bat
+
+# Or run GUI version
+run-gui.bat
 ```
 
-2. Compile the Java files:
+**Mac/Linux:**
 ```bash
-# For Java 8 compatibility
-javac -d . -source 8 -target 8 com\mrdinner\domain\common\*.java
-javac -d . -source 8 -target 8 com\mrdinner\domain\customer\*.java
-javac -d . -source 8 -target 8 com\mrdinner\domain\menu\*.java
-javac -d . -source 8 -target 8 com\mrdinner\domain\order\*.java
-javac -d . -source 8 -target 8 com\mrdinner\domain\staff\*.java
-javac -d . -source 8 -target 8 com\mrdinner\domain\delivery\*.java
-javac -d . -source 8 -target 8 com\mrdinner\domain\payment\*.java
-javac -d . -source 8 -target 8 com\mrdinner\domain\inventory\*.java
-javac -d . -source 8 -target 8 com\mrdinner\service\*.java
-javac -d . -source 8 -target 8 com\mrdinner\app\*.java
+# Clone the repository
+git clone https://github.com/Sogong-Phy-Com/Mr.daebak.git
+cd Mr.daebak
+
+# Make scripts executable
+chmod +x build.sh run.sh run-gui.sh
+
+# Run console version
+./build.sh
+./run.sh
+
+# Or run GUI version
+./run-gui.sh
 ```
 
-3. Run the application:
+#### **Method 2: Direct Java Commands**
 ```bash
-java com.mrdinner.app.Main
+# Clone the repository
+git clone https://github.com/Sogong-Phy-Com/Mr.daebak.git
+cd Mr.daebak
+
+# Compile all Java files
+javac -d . -source 8 -target 8 com/mrdinner/domain/common/*.java
+javac -d . -source 8 -target 8 com/mrdinner/domain/customer/*.java
+javac -d . -source 8 -target 8 com/mrdinner/domain/menu/*.java
+javac -d . -source 8 -target 8 com/mrdinner/domain/order/*.java
+javac -d . -source 8 -target 8 com/mrdinner/domain/staff/*.java
+javac -d . -source 8 -target 8 com/mrdinner/domain/delivery/*.java
+javac -d . -source 8 -target 8 com/mrdinner/domain/payment/*.java
+javac -d . -source 8 -target 8 com/mrdinner/domain/inventory/*.java
+javac -d . -source 8 -target 8 com/mrdinner/service/*.java
+javac -d . -source 8 -target 8 com/mrdinner/app/*.java
+javac -d . -source 8 -target 8 com/mrdinner/gui/*.java
+
+# Run the application
+java com.mrdinner.app.Main        # Console version
+java com.mrdinner.gui.MainGUI     # GUI version
 ```
+
+#### **Method 3: Download ZIP**
+1. Go to https://github.com/Sogong-Phy-Com/Mr.daebak
+2. Click **"Code"** → **"Download ZIP"**
+3. Extract the ZIP file
+4. Follow Method 2 steps
 
 ## 🎯 Key Features Demonstrated
 
